@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="bad-joke-generator-div"><span id="bad-joke-generator-span">BAD JOKE GENERATOR</span></div>
+        <div id="setup-punchline-generate-joke-div">
+            <div id="setup-and-punchline-div">
+                <span class="setup-and-punchline-spans-checkboxes">Setup<input class='setup-and-punchline-checkboxes' id="setup-checkbox" type="checkbox" checked></span>
+                <span class="setup-and-punchline-spans-checkboxes">Punchline<input class='setup-and-punchline-checkboxes' id="punchline-checkbox" type="checkbox" checked></span>
+            </div>
+            <button id='generate-joke' class="buttons">Generate Joke</button>
+        </div>
+        <div id="jokes-div">
+            <span class='setup-and-punchline-spans' id="setup-span"></span>
+            <span class='setup-and-punchline-spans' id="punchline-span"></span>
+        </div>
+        <button class='buttons previous-and-next-jokes-buttons' id='previous-joke'>Previous Joke</button>
+        <button class='buttons previous-and-next-jokes-buttons' id='next-joke'>Next Joke</button>
+        <button class="buttons save-show-delete-hide-buttons" id='save-joke'>Save Joke</button>
+        <button class="buttons save-show-delete-hide-buttons" id='show-saved-jokes'>Show saved jokes</button>
+        <div id='saved-jokes-div'>
+        </div>
+        <button class="buttons save-show-delete-hide-buttons" id='delete-selected-jokes'>Delete SELECTED jokes</button>
+        <button class="buttons save-show-delete-hide-buttons" id='delete-all-saved-jokes'>Delete ALL SAVED jokes</button>
+    </div>
+    <div id="delete-all-pop-up-div">
+        <div id="are-you-sure-div">Are you sure?</div>
+        <button id='delete-yes-button' class="buttons delete-or-not-buttons">YES</button>
+        <button id='delete-no-button' class="buttons delete-or-not-buttons">NO</button>
+    </div>
+</body>
+</html>
